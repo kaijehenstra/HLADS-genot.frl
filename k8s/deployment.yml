@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: genot-web
+  labels:
+    app: genot-web
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: genot-web
+  template:
+    metadata:
+      labels:
+        app: genot-web
+    spec:
+      containers:
+      - name: genot-web
+        image: kaijehenstra/genot
+        ports:
+        - containerPort: 80
