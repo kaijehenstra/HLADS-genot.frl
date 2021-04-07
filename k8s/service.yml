@@ -6,4 +6,6 @@ spec:
   selector:
     app: genot-web
   ports:
-    - port: 80 # Default port for image
+    - protocol: TCP
+      name: http
+      port: 80 # Default port for image

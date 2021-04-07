@@ -3,8 +3,12 @@ kind: Ingress
 metadata:
   name: genot-webingress
 spec:
+  tls:
+  - hosts:
+    - genot.frl
+    secretName: genot-webtls
   rules:
-  - host: '*.genot.frl'
+  - host: genot.frl
     http:
       paths:
       - path: /
