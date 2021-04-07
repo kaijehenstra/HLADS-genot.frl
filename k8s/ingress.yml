@@ -4,7 +4,7 @@ metadata:
   name: genot-webingress
 spec:
   rules:
-  - host: genot.frl
+  - host: '*.genot.frl'
     http:
       paths:
       - path: /
