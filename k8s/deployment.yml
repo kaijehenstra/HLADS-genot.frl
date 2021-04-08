@@ -17,5 +17,6 @@ spec:
       containers:
       - name: genot-web
         image: kaijehenstra/genot
+        imagePullPolicy: Always
         ports:
         - containerPort: 80
