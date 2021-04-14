@@ -1,7 +1,8 @@
 apiVersion: autoscaling/v2beta2
 kind: HorizontalPodAutoscaler
 metadata:
-  name: genot-webhpa
+  name: genot-web-hpa
+  namespace: genot-web-ns
 spec:
   scaleTargetRef:
     apiVersion: apps/v1

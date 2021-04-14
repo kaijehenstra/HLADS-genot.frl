@@ -1,12 +1,12 @@
 apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:
-  name: genot-webcert
-  namespace: default
+  name: genot-web-cert
+  namespace: genot-web-ns
 spec:
   dnsNames:
     - genot.frl
-  secretName: genot-webtls
+  secretName: genot-web-tls
   issuerRef:
     name: letsencrypt-cluster-issuer
     kind: ClusterIssuer

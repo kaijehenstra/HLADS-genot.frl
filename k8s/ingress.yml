@@ -1,12 +1,13 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: genot-webingress
+  name: genot-web-ingress
+  namespace: genot-web-ns
 spec:
   tls:
   - hosts:
     - genot.frl
-    secretName: genot-webtls
+    secretName: genot-web-tls
   rules:
   - host: genot.frl
     http:
@@ -15,6 +16,6 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: genot-webservice
+            name: genot-web-service
             port:
               number: 80
