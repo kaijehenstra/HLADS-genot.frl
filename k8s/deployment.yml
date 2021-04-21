@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
       - name: genot-web
-        image: kaijehenstra/genot:v1
+        image: kaijehenstra/genot:1.0.1
         imagePullPolicy: Always
         resources:
           requests:
