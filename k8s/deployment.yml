@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
       - name: genot-web
-        image: kaijehenstra/genot:1.0.1
+        image: registry.digitalocean.com/hlads/genot.frl:latest
         imagePullPolicy: Always
         resources:
           requests:
